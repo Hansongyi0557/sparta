@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SY COMPANY</title>
+    <style>
+        .nav {
+            height: 80px;
+            border-bottom: 1px solid black;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-right-items {
+            display: flex;
+            margin-left: auto;
+        }
+
+        .nav-item {
+            margin-left: 30px;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 60px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 40px;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        .main {
+            width: auto;
+            margin: 0 auto;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .price-item {
+            width: 300px;
+            height: 600px;
+            border: 1px solid black;
+            margin-left: 20px;
+            border-radius: 4px;
+        }
+
+        .prices {
+            display: flex;
+            font: bold;
+            text-align: center;
+        }
+
+        .item-img {
+            border-bottom: 1px solid black;
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+            width: auto;
+            height: auto;
+        }
+
+        .price-item-price {
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .price-item-button {
+            background-color: transparent;
+            background-image: none;
+            border-color: #007bff;
+            color: #007bff;
+            padding: .5rem 1rem;
+            font-size: 1.25rem;
+            line-height: 1.5;
+            border-radius: .3rem;
+            margin-top: 50px;
+        }
+    
+        .price-item-button--active {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+    
+
+        /* 1. 하이퍼링크 nav에만 적용시키고, 주문하기 버튼에는 적용안시키고 싶음*/
+        a:link {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .price-item-title {
+            margin-top: 20px;
+            margin-bottom: 5px;
+            width: auto;
+            height: auto;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 53px;
+        }
+        img
+        {
+            width: 250px;
+            height: 250px;
+            border-radius: 10px;
+        }
+        .price-item-detail{
+            width: 300px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+SY COMPANY
+    <div class="nav">
+        <div class="nav-right-items">
+            <div class="nav-item">신규</div>
+            <div class="nav-item">인기</div>
+            <div class="nav-item">세일</div>
+            <div class="nav-item">전체</div>
+        </div>
+
+    </div>
+    <div class="main">
+        <div class="title">
+            메인 타이틀 입니다.
+        </div>
+        <div class="subtitle">
+            서브 타이틀 입니다.
+        </div>
+    </div>
+    <div class="prices">
+        <div class="price-item">
+            <div class="price-item-title">
+            <div class="item-img">
+                <img src="https://t1.daumcdn.net/friends/prod/product/20200309105132287_SETFR000091_ZW_00.jpg?type=thumb&opt=R352x352@2xa">
+               
+            </div>
+            주차번호판
+        </div>
+            <div class="price-item-price">
+                15,000원
+            </div>
+            <div class="price-item-detail">
+                잠시만요, 배려주차하고 가실게요!<br>
+                뛰뛰! 바쁘신 것 알아요,<br>
+                그래도 배려 정차, 주차해야 하니까요.<br>
+                타인이 차주를 찾을 때<br>
+                유용하게 사용할 수 있는 번호판입니다.
+            </div>
+            <div> 
+                <button class="price-item-button">
+                    <a href=6-1주문서(과제).html>주문하기</a>
+                </button>
+            </div>
+        </div>
+
+        <div class="price-item">
+            <div class="price-item-title">
+            <div class="item-img">
+                <img src="https://t1.daumcdn.net/friends/prod/product/20200306131237825_8809656137847_ZW_00.jpg?type=thumb&opt=R352x352@2xa">
+            
+            </div>
+            메가바디필로우_리틀어피치
+            </div>
+            <div class="price-item-price">
+                99,000원
+            </div>
+            <div class="price-item-detail">
+                베개를 샀는데 천국이 보이는 마법<br>
+                뽀짝한 크기의 목베개는 잠시 안녕.<br>
+                수면의 질을 높여주는<br>
+                메가 사이즈 바디필로우를 만나보세요.<br>
+            </div>
+            <div>
+                <button class="price-item-button">
+                    <a href=6-1주문서(과제).html>주문하기</a>
+            </button>
+        </div>
+
+        </div>
+        <div class="price-item">
+            <div class="price-item-title">
+               
+            <div class="item-img">
+                <img src="https://t1.daumcdn.net/friends/prod/product/20200306123601403_8809681705646_ZW_00.jpg?type=thumb&opt=R352x352@2xa">
+                
+            </div>
+            니트상하의파자마
+            </div>
+            <div class="price-item-price">
+                59,000원
+            </div>
+            <div class="price-item-detail">
+                보들보들 커플잠옷<br>
+                싱그러운 초록초록 죠르디 파자마에요.<br>
+                부드러운 폴리니트의 촉감이 꿀잠을 보장해요!<br>
+            </div>
+            <div>
+                <div>            <button class="price-item-button price-item-button--active">
+                <a href=6-2주문서(과제).html>주문하기</a>
+            </button>
+            </div>
+        </div>
+        </div>
+        <div class="price-item">
+            <div class="price-item-title">
+               
+            <div class="item-img">
+                <img src="https://t1.daumcdn.net/friends/prod/product/20200306112010729_8801073223004_ZW_00.jpg?type=thumb&opt=R352x352@2xa">
+              
+            </div>
+            봉골라면 16개입
+            </div>
+            <div class="price-item-price">
+                19,900원
+            </div>
+            <div class="price-item-detail">
+                깊은 풍미, 어피치 봉골라면<br>
+                집에서도 근사한 한끼를 즐기고 싶다면<br>
+                어피치의 봉골라면을 만나보세요.<br>
+                칼칼한 바지락 육수에<br>
+                쫄깃한 파스타면을 즐길 수 있어요.<br>
+            </div>
+            <div>
+            <button class="price-item-button">
+                <a href=6-2주문서(과제).html>주문하기</a>
+            </button>
+        </div>
+        </div>
+        <div class="price-item">
+            <div class="price-item-title">
+              
+            <div class="item-img">
+                <img src="https://t1.daumcdn.net/friends/prod/product/20200309105107017_8809681706179_ZW_00.jpg?type=thumb&opt=R352x352@2xa">
+            
+            </div>
+            베이비드리밍 글리터거울
+        </div>
+            <div class="price-item-price">
+                10,000원
+            </div>
+            <div class="price-item-detail">
+                트윙클, 태가 나!<br>
+                어느 각도에서도 태가 나는<br>
+                리틀어피치의 글리터 거울이예요.<br>
+                살짝만 건드려도 핑크빛<br>
+                글리터가 차르륵- 흩어져요.
+            </div>
+            <div>            <button class="price-item-button price-item-button--active">
+                <a href=6-1주문서(과제).html>주문하기</a>
+            </button>
+        </div>
+        
+
+        </div>
+    </div>
+</body>
+
+</html>

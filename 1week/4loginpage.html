@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 페이지</title>
+    <!-- style 태그는 head안에 넣기 -->
+    <style>
+        .mytitle {
+            color: white;
+            text-align: center;
+            background-image: url('https://cdn.clien.net/web/api/file/F01/5906256/80c11421b470f.png');
+            background-size: cover;
+            background-position: center;
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .wrap {
+            width: 300px;
+            margin: 50px auto 0 auto;
+        }
+
+        /* 클래스를 만들어 클래스에 적용되는 스타일로 클래스 이름은 마음대로 지정할 수 있다.
+        class는 여러개를 가르키고, id는 특정 하나의 것만 가르킴  */
+    </style>
+</head>
+
+<body>
+    <div class=wrap>
+        <div class=mytitle>
+            <h1>로그인 화면</h1>
+            <h5>아이디와 비밀번호를 입력하세요.</h5>
+        </div>
+        <div>
+            <!-- 문단을 나누는 태그 -->
+            <p>ID : <input type="text"></p>
+            <p>PW : <input type="text"></p>
+            <button>로그인 하기</button>
+        </div>
+    </div>
+</body>
+
+</html>

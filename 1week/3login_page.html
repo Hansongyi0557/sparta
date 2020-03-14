@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>로그인페이지</title>
+    <style>
+      .mytitle {
+        color: black;
+        text-align: center;
+        background-image: url('https://cdn.clien.net/web/api/file/F01/5906256/80c11421b470f.png');
+        background-size: cover;
+        background-position: center;
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+        margin: 0 0 20px 0;
+
+				/* display flex를 쓸 때엔 아래 네 줄이 항상 묶여 다닙니다. */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+			
+			/* 자식선택자: mytitle 바로 아래 있는 h1 태그 */
+      .mytitle > h1 {
+        margin: 0 0 5px 0;
+      }
+			
+			/* 자식선택자: mytitle 바로 아래 있는 h5 태그 */
+      .mytitle > h5 {
+        margin: 5px 0 0 0;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="mytitle">
+      <h1>로그인 페이지</h1>
+      <h5>아이디, 비밀번호를 입력해주세요</h5>
+    </div>
+    <p>
+      ID: 
+      <input type="text">
+    </p>
+    <p>
+      PW: 
+      <input type="password">   
+    </p>
+    <button class="mybtn">로그인하기</button>
+</body>
+</html>

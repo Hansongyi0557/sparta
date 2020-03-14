@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>주문서 화면</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    .nav {
+      height: 80px;
+      border-bottom: 1px solid black;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-right-items {
+      display: flex;
+      margin-left: auto;
+    }
+
+    .nav-item {
+      margin-left: 30px;
+    }
+
+    .main {
+      width: auto;
+      margin: 0 auto;
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .img {
+      width: 300px;
+      height: 300px;
+      margin-left: 400px;
+      margin-top: 20px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      float: left;
+    }
+
+    .price-item-button {
+      background-color: transparent;
+      background-image: none;
+      border-color: #007bff;
+      color: #007bff;
+      padding: .5rem 1rem;
+      font-size: 1.25rem;
+      line-height: 1.5;
+      border-radius: .3rem;
+      margin-top: 30px;
+      cursor: pointer;
+      float: left;
+      margin-left: 10px;
+    }
+
+    .price-item-button--active {
+      background-color: #007bff;
+      color: #ffffff;
+    }
+
+
+    .price-item-title {
+      margin-top: 20px;
+      text-align: left;
+      font-size: 20px;
+      line-height: 53px;
+      font-weight: bold;
+    }
+
+    .price-item-price {
+      text-align: left;
+      line-height: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    input {
+      display: inline-block;
+      width: 200px;
+      font-size: 20px;
+      margin-right:500px  ;
+      }
+
+    .input-group-prepend {
+      margin-left: 400px;
+    }
+
+    /* .input-group-text{
+      margin-right: 90px;
+    }  */
+  </style>
+</head>
+
+<body>
+  SY COMPANY
+  <div class="nav">
+    <div class="nav-right-items">
+      <div class="nav-item">신규</div>
+      <div class="nav-item">인기</div>
+      <div class="nav-item">세일</div>
+      <div class="nav-item">전체</div>
+    </div>
+
+  </div>
+    <div class="img">
+      <img width="300px" height="300px"
+        src="https://t1.daumcdn.net/friends/prod/product/20200309105107017_8809681706179_ZW_00.jpg?type=thumb&opt=R352x352@2xa">
+      <!-- 여러장의 사진이 넘어가면서 보였으면 좋겠음-->
+    </div>
+    <div class="price-item-title">
+      베이비드리밍 글리터거울
+    </div>
+    <div class="price-item-price">
+      금액 : 15,000원
+    </div>
+    <div class="price-item-detail">
+      트윙클, 태가 나!<br>
+      어느 각도에서도 태가 나는<br>
+      리틀어피치의 글리터 거울이예요.<br>
+      살짝만 건드려도 핑크빛<br>
+      글리터가 차르륵- 흩어져요.
+    </div>
+  <button class="price-item-button">
+    주문하기
+  </button>
+  <button class="price-item-button">
+    담아두기
+  </button>
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1" style="display:inline-block; width:100px;">
+        주문자</span>
+    </div>
+    <input type="text" class="form-control" size="20">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1" style="display:inline-block; width:100px;">수량</span>
+    </div>
+    <input type="number" class="form-control" placeholder="--수량을 선택하세요--" aria-label="Username"
+      aria-describedby="basic-addon1" min="1" max="5">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1" style="display:inline-block; width:100px;">주소</span>
+    </div>
+    <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1" style="display:inline-block; width:100px;">연락처</span>
+    </div>
+    <input type="tel" class="form-control" placeholder="'-'제외하고 입력하세요" aria-label="Username"
+      aria-describedby="basic-addon1">
+  </div>
+  </div>
+</body>
+
+</html>
