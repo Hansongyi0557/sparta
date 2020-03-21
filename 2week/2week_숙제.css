@@ -1,0 +1,24 @@
+.container{
+    color: black;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+}
+h3{
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+.input-group-text{
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+p{
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Gaegu', cursive;
+    font-family: 'Poor Story', cursive;
+    font-family: 'Sunflower', sans-serif;
+    font-size: 20px;
+}
