@@ -73,6 +73,73 @@
             }
         }
 
+        $(document).ready(function () {
+            //HTML 로드가 완료된 이후에 진행되는 함수
+            listing();
+        });
+
+        function listing() {
+            let url = 'http://spartacodingclub.shop/post';
+
+            $.ajax({
+                type: "GET",
+                url: url, // 다른 URL 오른족 URL은 변수 이름이야 
+                data: "{}",
+               
+
+                success: function (response) {
+                    //console.log(response['articles']) > article 가져와지는지 콘솔창에서 확인 해보기
+                    //console.log(response)
+
+                   $('#cards-box').empty(); //기존카드 지우기
+
+
+                    let articles = response['articles']
+                    //articles 라는 구조를 반복적으로 보여줘야 함 for문 사용 
+                    for (i = 0; i < articles.length; i++) {
+                        console.log(articles[i])
+                        let title=articles[i]['title'];
+                        let desc=articles[i]['desc'];
+                        let url=articles[i]['url'];
+                        let comment=articles[i]['comment'];
+                        let img=articles[i]['image'];
+                        //console.log(title);
+                        makeCards(title,desc,url,comment,img);
+                    }
+                }
+            });
+        }
+
+        //카드를 만드는 함수
+        function makeCards(title,desc,url,comment,img){
+            //console.log(title,desc,url,comment,img)
+
+            console.log(img)
+            let temp_html = '<div class="card">\
+                <img class="card-img-top"\
+                    src="'+img+'"\
+                    alt="Card image cap">\
+                <div class="card-body">\
+                    <a href="'+url+'" class="card-title">'+title+'</a>\
+                    <p class="card-text">'+desc+'</p>\
+                    <p class="card-text comment">'+comment+'</p>\
+                </div>\
+            </div>'
+
+            $('#cards-box').append(temp_html); //card-box 이름을 가진 애들한테 teml_html로 덮어씌우기
+
+            // <div class="card">
+            //     <img class="card-img-top"
+            //         src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
+            //         alt="Card image cap">
+            //     <div class="card-body">
+            //         <a href="#" class="card-title">여기 기사 제목이 들어가죠</a>
+            //         <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
+            //         <p class="card-text comment">여기에 코멘트가 들어갑니다.</p>
+            //     </div>    
+
+        }
+
     </script>
 
 

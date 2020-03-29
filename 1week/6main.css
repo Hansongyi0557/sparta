@@ -1,0 +1,120 @@
+.nav {
+    height: 80px;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.nav-right-items {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-item {
+    margin-left: 30px;
+}
+
+.title {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.main {
+    width: auto;
+    margin: 0 auto;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.price-item {
+    width: 300px;
+    height: 600px;
+    border: 1px solid black;
+    margin-left: 20px;
+    border-radius: 4px;
+}
+
+.prices {
+    display: flex;
+    font: bold;
+    text-align: center;
+}
+
+.item-img {
+    border-bottom: 1px solid black;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+}
+
+.price-item-price {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.price-item-button {
+    background-color: transparent;
+    background-image: none;
+    border-color: #007bff;
+    color: #007bff;
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    margin-top: 50px;
+}
+
+.price-item-button--active {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+
+/* 1. 하이퍼링크 nav에만 적용시키고, 주문하기 버튼에는 적용안시키고 싶음*/
+a:link {
+    color: red;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.price-item-title {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 53px;
+}
+img
+{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+.price-item-detail{
+    width: 300px;
+    height: 100px;
+}
